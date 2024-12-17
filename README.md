@@ -17,7 +17,7 @@ npm install stable-fingerprint
 ```javascript
 import { BrowserFingerprint } from 'stable-fingerprint';
 
-const fingerprinter = new BrowserFingerprint();
+const fingerprinter = new StableFingerprint();
 fingerprinter.collectInformation();
 const uniqueFingerprint = fingerprinter.generateUniqueFingerprint();
 console.log(uniqueFingerprint);

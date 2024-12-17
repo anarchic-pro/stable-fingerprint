@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Browser Tests</title>
+  <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+</head>
+<body>
+  <div id="mocha"></div>
+  <script src="https://unpkg.com/mocha/mocha.js"></script>
+  <script src="https://unpkg.com/chai/chai.js"></script>
+  <script>
+    mocha.setup('bdd');
+  </script>
+  
+  <!-- Include your library -->
+  <script src="../dist/index.esm.js"></script>
+  
+  <!-- Include test files -->
+  <script src="fingerprint.test.js"></script>
+  
+  <script>
+    mocha.run();
+  </script>
+</body>
+</html>
